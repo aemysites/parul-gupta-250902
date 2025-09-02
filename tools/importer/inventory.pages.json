@@ -1,0 +1,470 @@
+{
+  "templates": [
+    {
+      "name": "'Corporate Website Template'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/tradetalks",
+          "uuid": "604e63d5396c37720b84528dd1f70eec834cace4"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-purpose/content",
+          "uuid": "fb7ab6e9ffe67bc76c1a1aec81a2ec3a24b5e18c"
+        },
+        {
+          "url": "https://www.nasdaq.com/newsroom",
+          "uuid": "636835f0a7ae92b408926b4cd153227b682aadea"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Interface'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/contact-us",
+          "uuid": "82df7c8f127fb8ef98b13ccbf2eb8ca481dc993b"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-makers",
+          "uuid": "97d2a1f05f136120a52b91be9be3cea06dda22e5"
+        },
+        {
+          "url": "https://www.nasdaq.com/appendix",
+          "uuid": "55247f23bec93dfeb6605c5901dc4d9d76c31430"
+        },
+        {
+          "url": "https://www.nasdaq.com/delandingpage",
+          "uuid": "40eaf35cb506d06a27a00941ee9d5a5224416bef"
+        },
+        {
+          "url": "https://www.nasdaq.com/frlandingpage",
+          "uuid": "89305ed47c0f69785bf8a8cccb5b615e35166dc3"
+        },
+        {
+          "url": "https://www.nasdaq.com/itlandingpage",
+          "uuid": "c9574d8509d3ded39e46a407078234e78fc1923a"
+        },
+        {
+          "url": "https://www.nasdaq.com/eslandingpage",
+          "uuid": "427f0f855869154a0c5c67a318d8e4b6026a9b8f"
+        },
+        {
+          "url": "https://www.nasdaq.com/zhlandingpage",
+          "uuid": "6591907256303d02790e5a7dbf98b66388c61777"
+        },
+        {
+          "url": "https://www.nasdaq.com/Verafin",
+          "uuid": "cc379bb3633ed0199f2e4e9540a65c7a305ab0ef"
+        },
+        {
+          "url": "https://www.nasdaq.com/advertising",
+          "uuid": "cf63b719a0f781e2d755fef44940a8f137fa8fc5"
+        },
+        {
+          "url": "https://www.nasdaq.com/newsletters",
+          "uuid": "8008d86d5ceaea29c8882d765fe077a39880dc07"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-purpose",
+          "uuid": "fae0cb5d8d0287cb5c6b5034699383b2df66cfa5"
+        },
+        {
+          "url": "https://www.nasdaq.com/day-life-co2-removal-certificate",
+          "uuid": "487ebe0ee7877cc91f50174b3790b630da901830"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-foundation",
+          "uuid": "e1d4ddddc654e959ff6ab2198f9391ccda0f6317"
+        },
+        {
+          "url": "https://www.nasdaq.com/global-financial-crime-report",
+          "uuid": "b0585e5fa3b0f2697ef51c41e9483de3a8d58ee3"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-ventures",
+          "uuid": "e26a00ec387e45711b37acab8ac4b9529c9eaeaa"
+        },
+        {
+          "url": "https://www.nasdaq.com/about",
+          "uuid": "769b277288138028534bf576613f96ce11a1c4b3"
+        },
+        {
+          "url": "https://www.nasdaq.com/new-investor-initiative",
+          "uuid": "54ba93a2769278453bb6c092f32da8e867841a8f"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/careers",
+          "uuid": "9c8483ffedfeb3d9c3c6952bfd7eb5464302fc2d"
+        },
+        {
+          "url": "https://www.nasdaq.com/Role-of-an-Exchange",
+          "uuid": "f42ebaac56a47270eda3320605e821140843716e"
+        },
+        {
+          "url": "https://www.nasdaq.com/smart-investing",
+          "uuid": "0b241e4f91ac13c2038e4644d157b88a769e06d2"
+        },
+        {
+          "url": "https://www.nasdaq.com/WSJ-Tech-Live",
+          "uuid": "8a7c778cf3a083d98ab81fffc3ab9cefe200a639"
+        },
+        {
+          "url": "https://www.nasdaq.com/financial-literacy",
+          "uuid": "ad5750e83fff6c614b09c154c9d734580dab99f6"
+        },
+        {
+          "url": "https://www.nasdaq.com/Enterprise-Tech-30",
+          "uuid": "927a8c2e77b1c503162229a564021a4ed92f6909"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-entrepreneurial-center",
+          "uuid": "de289d8f730c5b96e85a18b52aa0faabe1731349"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/board-of-directors",
+          "uuid": "c85d5963182c3b9c841f8503356cc584b0c53f43"
+        },
+        {
+          "url": "https://www.nasdaq.com/world-reimagined-podcast",
+          "uuid": "fcffd719c04b4a1ee29ea70835a1f5951b0d512a"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/press-center",
+          "uuid": "7f8e185becbec4b072e3d7c4751f20c91455e27d"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/events/studio-b",
+          "uuid": "4ce28899204acc0c1140ee7fa9e3ab6541205f67"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/advertising",
+          "uuid": "df96a810e94d0154deee1bd2a0e833b1ab188397"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/events/10th-floor",
+          "uuid": "b5c05cd86f69f31acf9274d08203db94c3d1c375"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/events/2nd-floor",
+          "uuid": "82a8337e8c6bf18c1fb39d7b8f50b5834086e5a9"
+        },
+        {
+          "url": "https://www.nasdaq.com/public-policy",
+          "uuid": "35eaef5ab7c6bd35f68daa007ee9a7a55cb984ee"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/events/studio-a",
+          "uuid": "12667c1b39dae830fcb370b9914fb415d7ca7f30"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/events/the-gallery",
+          "uuid": "1f05a566797dfb62c36331af241c4ebd6013848c"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/welcome-to-times-square",
+          "uuid": "9cf8599cae4ab12572cb86126ed6cfa00825c2dd"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/our-people",
+          "uuid": "3efef898913fe11d86d69b134cbbe7ae0fa1b255"
+        },
+        {
+          "url": "https://www.nasdaq.com/GoodWorks",
+          "uuid": "5f3492c5fb519f624787df31e6c6fcb0d7e8d542"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging",
+          "uuid": "2a7a23b874e7607a187f8a2b43ed058c100232ab"
+        },
+        {
+          "url": "https://www.nasdaq.com/next-gen-investing",
+          "uuid": "704e327ae9bba5762a59a98016f1835a8dbdeb29"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/bell-ringing-ceremony",
+          "uuid": "e95f2b524f6de87f1512390177f0652781819909"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/events",
+          "uuid": "62afdc98a010949e585478edc67dc9e8d8bf912f"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite/broadcast-studio-and-live-media",
+          "uuid": "bec828c9afec8e7c65b0e4c2bc51b4ec04374c20"
+        },
+        {
+          "url": "https://www.nasdaq.com/marketsite",
+          "uuid": "cabf5898e45bc7d474726fd967061f21e0dcaecf"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Template'",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/european-market-activity/news/market-notices",
+          "uuid": "2531a9cebb3e02384be40cfee884c7d77ed2ccb7"
+        },
+        {
+          "url": "https://www.nasdaq.com/european-markets/it-notices",
+          "uuid": "e92c2287d5993d98d9d3cb7e891521b293b99e02"
+        },
+        {
+          "url": "https://www.nasdaq.com/european-market-activity/shares/fact-sheet-faq",
+          "uuid": "0f6b0fbf1888c9ebeadb2144196a00fdd5a5e9e7"
+        },
+        {
+          "url": "https://www.nasdaq.com/european-market-activity/news/corporate-actions/repurchase-of-own-shares",
+          "uuid": "9a0e02c31e6f7eda3614756f1a77c464054d5630"
+        },
+        {
+          "url": "https://www.nasdaq.com/european-market-activity/news/statistics",
+          "uuid": "1862a82b1fc8177d882096282e21877dde3a6d06"
+        },
+        {
+          "url": "https://www.nasdaq.com/european-market-activity/news/press-center",
+          "uuid": "2b61775b6b0b514820bd307b9e073a04d1eee18d"
+        }
+      ]
+    },
+    {
+      "name": "Dashboard Template",
+      "cluster": 4,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/market-activity/etf",
+          "uuid": "c87b918456b2dd221462cf30716855b68a822da2"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/stocks",
+          "uuid": "450fe9f1830d98e4ed0aac0a909c9de9fb07125c"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+          "uuid": "6dbc5755e5c2d14b4cc216b8b177cc3d028e2218"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/ipos",
+          "uuid": "d9bded7e3ce961314c21388e921e8bf9a4546235"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/stock-splits",
+          "uuid": "6114d1429b9e3b78dc291bb0d6af7ed36f95ccb5"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/currencies",
+          "uuid": "24e5f30100c398ba566d08c4e17d08f5a36a9238"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/indexes",
+          "uuid": "6cb40fe82089e0456a150f6a58b05fa08728eb14"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/cryptocurrency",
+          "uuid": "e08aeccc8dc84cb8ef71e5efbfd3e5b9ab7961f1"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/fixed-income",
+          "uuid": "36b12933e4c5ef12372990d119c19391f587b3ff"
+        },
+        {
+          "url": "https://www.nasdaq.com/market-activity/mutual-fund",
+          "uuid": "c70c43e321615a659739b68ff91029a7ec9e2547"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Template'",
+      "cluster": 5,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/public-policy/brussels",
+          "uuid": "679b02a68f356eeb543a1f5f3fb45e4ff8b38fb0"
+        },
+        {
+          "url": "https://www.nasdaq.com/public-policy/agenda",
+          "uuid": "6dacd4f2be7db4e4875ed405356a2e31a03d1b01"
+        },
+        {
+          "url": "https://www.nasdaq.com/public-policy/tools",
+          "uuid": "3864985cea4f092789d2cf2228e22d9f9feee355"
+        },
+        {
+          "url": "https://www.nasdaq.com/public-policy/testimony-and-opinions",
+          "uuid": "b863122fcc6b0da423b46e1fc3d825b38277b584"
+        }
+      ]
+    },
+    {
+      "name": "'Directory Listing'",
+      "cluster": 6,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/nasdaq-foundation/grant-recipients",
+          "uuid": "24bcbc87cb16b0b9168c25b5a470e4f710c18b92"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-foundation/grant-program",
+          "uuid": "561aee46570e1df2dbed25ecc77411816dd65320"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-foundation/new-investor-initiative",
+          "uuid": "b6f87f0a1005cf5016bae4d1934cc02d550e6d6e"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Interface'",
+      "cluster": 7,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/about/careers/nasdaq-internship-program",
+          "uuid": "e2eb888184b2505673125d22e1b621b84e370944"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/careers/vilnius",
+          "uuid": "546effac74add436dc8f5e2d5a2532ebfa80692d"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/careers/mumbai",
+          "uuid": "bbc4893b44d482794550958b1273be70a588cee6"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/careers/bangalore",
+          "uuid": "7534215193b3c21524fb6a33d5a201c499af937e"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/careers/manila",
+          "uuid": "6c6dc64dd3b61c87d5a8c4abd4c1efc8c2ef9c08"
+        }
+      ]
+    },
+    {
+      "name": "'Data Table Dashboard'",
+      "cluster": 8,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/solutions/nordic-baltic-membership-list",
+          "uuid": "ae9ed7126ff45ab3096156eca18f0c675b0e6676"
+        },
+        {
+          "url": "https://www.nasdaq.com/solutions/equity-derivatives-market-makers",
+          "uuid": "ffc1492725699dd8f21aa6d2da59d163946394c0"
+        }
+      ]
+    },
+    {
+      "name": "Content Hub Template",
+      "cluster": 9,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/open",
+          "uuid": "e2fba146a835ab2318d694421c4c7248fe87e969"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/globe",
+          "uuid": "52d0ba41362faa67fe8d97f19b0bb278f5c5e8a9"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/apan",
+          "uuid": "b5fc887d6b29573ebd89e668757652668dd8a3ed"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/parents-caregivers",
+          "uuid": "7088871277338a93ae5876e757dec455cd9ddd2f"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/accessibility",
+          "uuid": "0a5967ec00d4736b0e49304b4ec651b7466bd31c"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/administrative-professionals",
+          "uuid": "65fb517199bc4db9b9bdee2508c9ea16fcf81f03"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/seen",
+          "uuid": "486f22c7f5cf1da6341dac189f493a1222710df8"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/adelante",
+          "uuid": "c8534474058e0e38ed4fc860d4092bacb8104d5a"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/new2nasdaq",
+          "uuid": "0eb326186ac2f933200dbbf44f9600a71d76c9c1"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/green-team",
+          "uuid": "e01a5e2770c0610b053b7ec85ea2996c141b4673"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/win",
+          "uuid": "c28a79ccac278d76a03230709edac4c9320c0788"
+        },
+        {
+          "url": "https://www.nasdaq.com/about/inclusion-and-belonging/veterans",
+          "uuid": "41aefcce4e3ccb97505edf8ab4693c0da089d30f"
+        }
+      ]
+    },
+    {
+      "name": "'Corporate Dashboard'",
+      "cluster": 10,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/eip",
+          "uuid": "9d7414a1d44ec726d808d2a3153b2e98121d44a2"
+        },
+        {
+          "url": "https://www.nasdaq.com/privacy-statement",
+          "uuid": "d43a9579f26533d0c7945ba065dde907c7feaed7"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-press-kit-terms-and-conditions",
+          "uuid": "acc1737ce698adfed63a0d14c4a1e9f68d84179b"
+        },
+        {
+          "url": "https://www.nasdaq.com/trust-center",
+          "uuid": "ee8ffdf74be11cd59d35da2892150b661e02c58b"
+        },
+        {
+          "url": "https://www.nasdaq.com/website-third-party-list",
+          "uuid": "91940e2f1a21ffc48d6b3be7ec9b8f49409d7838"
+        },
+        {
+          "url": "https://www.nasdaq.com/nasdaq-RSS-Feeds",
+          "uuid": "9560687f4f7a6ba7e8766cca85c9aab1bb25e1d7"
+        },
+        {
+          "url": "https://www.nasdaq.com/legal/cryptocurrency-fraud",
+          "uuid": "2f6041dada16eb0ce5afbafba72d69caacc8e208"
+        },
+        {
+          "url": "https://www.nasdaq.com/app/nasdaq-markets",
+          "uuid": "ce9370a9259ba005d9a724faae0e8727ca8a9bf5"
+        },
+        {
+          "url": "https://www.nasdaq.com/cookie-statement",
+          "uuid": "f6f977832439c2dceff723acaa7c7f7d887e8dd9"
+        },
+        {
+          "url": "https://www.nasdaq.com/legal",
+          "uuid": "8015209b5b0e6a52a28a7feb4417077118be17d0"
+        }
+      ]
+    },
+    {
+      "name": "'Directory Listing Page'",
+      "cluster": 11,
+      "pages": [
+        {
+          "url": "https://www.nasdaq.com/plus/scorecard/faq",
+          "uuid": "43e38dd362adf4883fc8713c1f68da31ce6ad730"
+        }
+      ]
+    }
+  ]
+}
