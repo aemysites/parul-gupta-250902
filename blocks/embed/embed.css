@@ -60,3 +60,37 @@
   top: 4px;
   left: 7px;
 }
+
+
+.embed.embedvideo46 {
+  /* Ensure block fills viewport width and sufficient height */
+  width: 100vw;
+  min-height: 360px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* Simulate top strip, shadow, and black area with background layers */
+  background:
+    linear-gradient(to bottom, #f6f6fa 28px, transparent 28px),   /* Top light strip */
+    linear-gradient(to bottom, #868594 0 8px, transparent 8px),  /* Shadow separator */
+    #000;                                                       /* Main black block */
+
+  background-repeat: no-repeat;
+  background-size: 100% 28px, 100% 8px, 100% auto;
+  background-position: top, 28px top, top;  /* Fixed syntax */
+}
+
+/* Hide the text inside */
+.embed.embedvideo46 p {
+  color: transparent;
+  font-size: 1px;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
