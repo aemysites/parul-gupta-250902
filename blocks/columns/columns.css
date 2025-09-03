@@ -31,3 +31,162 @@
     order: unset;
   }
 }
+
+
+.columns.columns74 > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: stretch;
+  gap: 0;
+  background: none;
+}
+
+/* Ensure top alignment in all columns */
+.columns.columns74 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+/* Left (intro) column */
+.columns.columns74 > div > div:nth-child(1) {
+  background: #60ffb1;
+  flex: 0 0 370px;
+  max-width: 430px;
+  min-width: 320px;
+  align-items: flex-start;
+  padding: 38px 36px 22px;
+}
+
+/* Intro column typography */
+.columns.columns74 > div > div:nth-child(1) h2 {
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #141a17;
+  margin: 0 0 19px;
+}
+
+.columns.columns74 > div > div:nth-child(1) h3 {
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: #141a17;
+  margin: 0 0 20px;
+  line-height: 1.07;
+}
+
+.columns.columns74 > div > div:nth-child(1) p {
+  color: #47b993;
+  font-size: 1.13rem;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Card columns (right) */
+.columns.columns74 > div > div:nth-child(2),
+.columns.columns74 > div > div:nth-child(3) {
+  background: #fff;
+  flex: 1 1 0;
+  min-width: 0;
+  align-items: flex-start;
+  padding: 38px 36px 22px;
+  border-left: none;
+}
+
+/* Card label styling */
+.columns.columns74 > div > div:nth-child(2) p:first-child,
+.columns.columns74 > div > div:nth-child(3) p:first-child {
+  color: #c1cad7;
+  font-weight: 600;
+  font-size: 1.01rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin: 0 0 7px;
+}
+
+/* Card headline styling */
+.columns.columns74 > div > div:nth-child(2) h3,
+.columns.columns74 > div > div:nth-child(3) h3 {
+  color: #141a17;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin: 0 0 18px;
+  line-height: 1.24;
+  overflow-wrap: break-word;
+}
+
+/* Only show the descriptive link, hide raw URL link if present */
+.columns.columns74 > div > div:nth-child(2) h3 a:first-child,
+.columns.columns74 > div > div:nth-child(3) h3 a:first-child {
+  display: none;
+}
+
+.columns.columns74 > div > div:nth-child(2) h3 a:last-child,
+.columns.columns74 > div > div:nth-child(3) h3 a:last-child {
+  display: block;
+  color: #141a17;
+  font-size: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+/* Card meta info styling */
+.columns.columns74 > div > div:nth-child(2) ul,
+.columns.columns74 > div > div:nth-child(3) ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  color: #8ca1b6;
+  font-size: 1rem;
+  list-style: disc inside none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  margin-top: 0;
+}
+
+.columns.columns74 > div > div:nth-child(2) ul li,
+.columns.columns74 > div > div:nth-child(3) ul li {
+  color: #8ca1b6;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 6px 0 0;
+  line-height: 1.6;
+}
+
+/* Icon in meta */
+.columns.columns74 > div > div:nth-child(2) picture,
+.columns.columns74 > div > div:nth-child(3) picture {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.columns.columns74 > div > div:nth-child(2) picture img,
+.columns.columns74 > div > div:nth-child(3) picture img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* Responsive: stack columns vertically on smaller screens */
+@media (width <= 900px) {
+  .columns.columns74 > div {
+    flex-direction: column;
+  }
+
+  .columns.columns74 > div > div {
+    min-width: 0;
+    max-width: 100%;
+    padding: 28px 16px;
+    border-left: none;
+  }
+}
