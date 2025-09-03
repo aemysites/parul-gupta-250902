@@ -257,12 +257,9 @@
   padding: 36px 32px 28px;
   max-width: 1160px;
   margin: 0 auto;
-
-  /* Remove flex to avoid forcing horizontal layout when ul is empty */
   display: block;
 }
 
-/* Use CSS Grid on the ul to establish two columns for li items */
 .cards.cards66 > ul {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -271,12 +268,9 @@
   padding: 0;
   list-style: none;
   width: 100%;
-  min-height: 180px; /* Ensure some vertical space if empty for visual debug */
+  min-height: 180px;
 }
 
-/* Column simulation using nth-child 
-   Main column: items 1-6 (adjust as needed for your real data) 
-   Sidebar: items 7+ */
 .cards.cards66 > ul > li {
   background: none;
   border: none;
@@ -290,14 +284,11 @@
   align-items: center;
 }
 
-/* Main column items */
-
 .cards.cards66 > ul > li:first-child {
   border-top: none;
   padding-top: 0;
 }
 
-/* Sidebar column: items 7+ */
 .cards.cards66 > ul > li:nth-child(n+7) {
   grid-column: 2 / 3;
   background: #F1F8FF;
@@ -311,13 +302,11 @@
   margin: 0;
 }
 
-/* First sidebar item: remove top border and adjust padding */
 .cards.cards66 > ul > li:nth-child(7) {
   border-top: none;
   padding-top: 0;
 }
 
-/* News images: right aligned in row */
 .cards.cards66 > ul > li img {
   width: 80px;
   height: 60px;
@@ -329,13 +318,11 @@
   display: block;
 }
 
-/* Main column text layout */
 .cards.cards66 > ul > li > *:not(img) {
   flex: 1 1 0;
   min-width: 0;
 }
 
-/* Category label */
 .cards.cards66 > ul > li .category,
 .cards.cards66 > ul > li .cards-category {
   color: #666;
@@ -347,7 +334,6 @@
   display: block;
 }
 
-/* Headline */
 .cards.cards66 > ul > li .headline,
 .cards.cards66 > ul > li .cards-headline {
   color: #121212;
@@ -357,7 +343,6 @@
   line-height: 1.25;
 }
 
-/* Meta info */
 .cards.cards66 > ul > li .meta,
 .cards.cards66 > ul > li .cards-meta {
   color: #888;
@@ -365,7 +350,6 @@
   margin-top: 2px;
 }
 
-/* Sidebar headlines smaller, sidebar meta info */
 .cards.cards66 > ul > li:nth-child(n+7) .headline,
 .cards.cards66 > ul > li:nth-child(n+7) .cards-headline {
   font-size: 14px;
@@ -381,7 +365,6 @@
   margin-top: 2px;
 }
 
-/* "See More" button full width, visually separated */
 .cards.cards66 .button,
 .cards.cards66 a.button {
   width: 100%;
@@ -399,7 +382,6 @@
   box-shadow: none;
 }
 
-/* Responsive: stack everything vertically */
 @media (width <= 900px) {
   .cards.cards66 {
     padding: 18px 6px 16px;
@@ -427,5 +409,161 @@
     width: 64px;
     height: 48px;
     margin-left: 14px;
+  }
+}
+
+
+.cards.cards113 {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top-level: two columns side by side using flex */
+.cards.cards113 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Left column: stack header and image vertically */
+.cards.cards113 > ul > li:nth-child(1),
+.cards.cards113 > ul > li:nth-child(2) {
+  flex: 0 0 350px;
+  max-width: 350px;
+  min-width: 280px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling in left column */
+.cards.cards113 > ul > li:nth-child(1) {
+  margin-bottom: 24px;
+  background: none;
+  border: none;
+}
+
+.cards.cards113 > ul > li:nth-child(1) .cards-card-body {
+  padding: 36px 0 16px;
+  margin: 0;
+}
+
+.cards.cards113 > ul > li:nth-child(1) .cards-card-body p {
+  margin: 0 0 8px;
+}
+
+.cards.cards113 > ul > li:nth-child(1) .cards-card-body p strong {
+  color: #202636;
+  font-size: 1.28rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cards.cards113 > ul > li:nth-child(1) .cards-card-body p:not(:first-child) {
+  color: #7b8a9d;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+/* Main image styling */
+.cards.cards113 > ul > li:nth-child(2) .cards-card-image {
+  margin-bottom: 0;
+}
+
+.cards.cards113 > ul > li:nth-child(2) img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* Right column: group cards 3-8 in a flex 2-column grid */
+.cards.cards113__rightcol {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Simulate a right column container for cards 3-8 using nth-child and flex-basis */
+.cards.cards113 > ul > li:nth-child(n+3) {
+  background: #f5f8fa;
+  border: none;
+  padding: 28px 24px;
+  border-radius: 0;
+  margin: 0 24px 24px 0;
+  box-sizing: border-box;
+  width: calc(50% - 12px);
+  min-width: 260px;
+  max-width: 320px;
+  flex: 0 1 calc(50% - 12px);
+  display: block;
+}
+
+/* Remove right margin for every second card in each row */
+.cards.cards113 > ul > li:nth-child(even):nth-child(n+3) {
+  margin-right: 0;
+}
+
+/* Card content styles */
+.cards.cards113 .cards-card-body {
+  margin: 0;
+  padding: 0;
+}
+
+.cards.cards113 > ul > li:nth-child(n+3) .cards-card-body p strong {
+  color: #1476d7;
+  font-size: 1.13rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cards.cards113 > ul > li:nth-child(n+3) .cards-card-body p:not(:first-child) {
+  color: #202636;
+  font-size: 0.96rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.42;
+}
+
+.cards.cards113 > ul > li:nth-child(n+3) .cards-card-image {
+  margin-bottom: 12px;
+  line-height: 0;
+}
+
+.cards.cards113 > ul > li:nth-child(n+3) .cards-card-image img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive: stack columns/cards vertically below 900px */
+@media (width <= 900px) {
+  .cards.cards113 > ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cards.cards113 > ul > li,
+  .cards.cards113 > ul > li:nth-child(n+3) {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 32px;
+    display: block;
+  }
+
+  .cards.cards113 > ul > li:nth-child(n+3) {
+    padding: 20px 12px;
+    margin-right: 0;
   }
 }
