@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -42,7 +43,6 @@
   background: none;
 }
 
-/* Ensure top alignment in all columns */
 .columns.columns74 > div > div {
   display: flex;
   flex-direction: column;
@@ -51,7 +51,6 @@
   box-sizing: border-box;
 }
 
-/* Left (intro) column */
 .columns.columns74 > div > div:nth-child(1) {
   background: #60ffb1;
   flex: 0 0 370px;
@@ -61,7 +60,6 @@
   padding: 38px 36px 22px;
 }
 
-/* Intro column typography */
 .columns.columns74 > div > div:nth-child(1) h2 {
   font-size: 1.06rem;
   font-weight: 700;
@@ -88,7 +86,6 @@
   line-height: 1.5;
 }
 
-/* Card columns (right) */
 .columns.columns74 > div > div:nth-child(2),
 .columns.columns74 > div > div:nth-child(3) {
   background: #fff;
@@ -99,7 +96,6 @@
   border-left: none;
 }
 
-/* Card label styling */
 .columns.columns74 > div > div:nth-child(2) p:first-child,
 .columns.columns74 > div > div:nth-child(3) p:first-child {
   color: #c1cad7;
@@ -110,7 +106,6 @@
   margin: 0 0 7px;
 }
 
-/* Card headline styling */
 .columns.columns74 > div > div:nth-child(2) h3,
 .columns.columns74 > div > div:nth-child(3) h3 {
   color: #141a17;
@@ -121,7 +116,6 @@
   overflow-wrap: break-word;
 }
 
-/* Only show the descriptive link, hide raw URL link if present */
 .columns.columns74 > div > div:nth-child(2) h3 a:first-child,
 .columns.columns74 > div > div:nth-child(3) h3 a:first-child {
   display: none;
@@ -137,7 +131,6 @@
   margin-bottom: 0;
 }
 
-/* Card meta info styling */
 .columns.columns74 > div > div:nth-child(2) ul,
 .columns.columns74 > div > div:nth-child(3) ul {
   display: flex;
@@ -161,7 +154,6 @@
   line-height: 1.6;
 }
 
-/* Icon in meta */
 .columns.columns74 > div > div:nth-child(2) picture,
 .columns.columns74 > div > div:nth-child(3) picture {
   display: inline-block;
@@ -177,7 +169,6 @@
   margin-right: 6px;
 }
 
-/* Responsive: stack columns vertically on smaller screens */
 @media (width <= 900px) {
   .columns.columns74 > div {
     flex-direction: column;
@@ -188,5 +179,245 @@
     max-width: 100%;
     padding: 28px 16px;
     border-left: none;
+  }
+}
+
+
+.columns.columns81 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+  padding: 54px 0 40px;
+  background: var(--background-color);
+}
+
+@media (width <= 900px) {
+  .columns.columns81 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 24px 0;
+  }
+}
+
+.columns.columns81 > div {
+  display: contents;
+}
+
+/* --- LEFT COLUMN --- */
+.columns.columns81 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 540px;
+}
+
+/* Simulated image area */
+.columns.columns81 > div > div:first-child::before {
+  display: block;
+  width: 100%;
+  height: 205px;
+  background: #e3e8f0;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  content: "";
+}
+
+/* Unified card for heading, text, and button */
+.columns.columns81 > div > div:first-child > * {
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 32px 32px 24px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+
+  /* Visually group all children as a single card, covering h2, p, .button */
+  position: relative;
+  top: -6px; /* allow card to visually touch the image area */
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 16px 0 rgb(40 56 86 / 8%);
+}
+
+/* Remove extra gap between the simulated image and the card */
+.columns.columns81 > div > div:first-child > *:first-child {
+  margin-top: 0;
+}
+
+/* Remove default margins for heading, text, and button inside the card */
+.columns.columns81 > div > div:first-child > * > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.columns.columns81 > div > div:first-child h2 {
+  color: #14244a;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.columns.columns81 > div > div:first-child p {
+  color: #22395d;
+  font-size: 1.07rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+/* Only last p should have its bottom margin reduced for the button */
+.columns.columns81 > div > div:first-child p:last-of-type {
+  margin-bottom: 24px;
+}
+
+/* Button placement & style inside card */
+.columns.columns81 .button-container .button,
+.columns.columns81 a.button {
+  margin: 0;
+  padding: 10px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2em;
+  background: #0a1931;
+  color: #fff;
+  box-shadow: 0 2px 8px rgb(10 25 49 / 11%);
+  transition: background 0.25s;
+  text-align: left;
+  max-width: 220px;
+  min-width: 120px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+/* Remove extra spacing below card */
+.columns.columns81 > div > div:first-child > *:not(:first-child) {
+  margin-top: 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns81 > div > div:first-child {
+    max-width: 100%;
+  }
+
+  .columns.columns81 > div > div:first-child::before {
+    height: 100px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .columns.columns81 > div > div:first-child > * {
+    max-width: 100%;
+    padding: 18px 12px 16px;
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+/* --- RIGHT COLUMN --- */
+.columns.columns81 > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  background: var(--background-color);
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columns.columns81 > div > div:last-child h3 {
+  color: #0a1931;
+  font-size: 1.19rem;
+  font-weight: 700;
+  margin: 0 0 18px;
+  line-height: 1.2;
+  max-width: 32ch;
+  text-align: left;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.columns.columns81 > div > div:last-child p {
+  font-size: 1rem;
+  color: #22395d;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 430px;
+  text-align: left;
+}
+
+/* Form field simulation */
+.columns.columns81 > div > div:last-child p:not(:has(strong), :last-child, :first-child) {
+  background: #f7f9fc;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px 18px;
+  color: #6c7ea5;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+/* Labels styling */
+.columns.columns81 > div > div:last-child strong {
+  color: #0a1931;
+  font-weight: 600;
+  font-size: 1.02rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* "Submit" button: left-aligned, not full width */
+.columns.columns81 > div > div:last-child p:last-child {
+  background: #0a1931;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2em;
+  padding: 12px 36px;
+  box-shadow: 0 2px 8px rgb(10 25 49 / 13%);
+  border: none;
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-align: left;
+  max-width: 220px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Keep right column width tight on large screens */
+@media (width >= 1200px) {
+  .columns.columns81 > div > div:last-child {
+    max-width: 430px;
+  }
+}
+
+/* Responsive tweaks for right column */
+@media (width <= 900px) {
+  .columns.columns81 > div > div:last-child {
+    max-width: 100%;
+  }
+
+  .columns.columns81 > div > div:last-child p {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .columns.columns81 > div > div:last-child h3 {
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 0;
   }
 }
