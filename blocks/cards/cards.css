@@ -33,7 +33,6 @@
   padding: 60px 0;
 }
 
-/* Side-by-side row, slightly increased gap, horizontal scroll */
 .cards.cards1 > ul {
   display: flex;
   flex-flow: row nowrap;
@@ -47,7 +46,6 @@
   scrollbar-width: thin;
 }
 
-/* Slightly wider cards for less aggressive text wrapping */
 .cards.cards1 > ul > li {
   background: transparent;
   border: none;
@@ -61,13 +59,11 @@
   overflow: hidden;
 }
 
-/* Remove default margin/padding on card sections */
 .cards.cards1 .cards-card-body {
   margin: 0;
   padding: 0;
 }
 
-/* Top visual block - slightly taller */
 .cards.cards1 > ul > li > .cards-card-body:first-child {
   height: 70px;
   border-radius: 12px 12px 0 0;
@@ -77,19 +73,16 @@
   margin-bottom: 12px;
 }
 
-/* First card: purple gradient overlay */
 .cards.cards1 > ul > li:first-child > .cards-card-body:first-child {
   background: linear-gradient(90deg, #6d4aff 75%, #8467ff 100%);
   opacity: 0.93;
 }
 
-/* Other cards: neutral image placeholder */
 .cards.cards1 > ul > li:not(:first-child) > .cards-card-body:first-child {
   background: #23263a;
   opacity: 0.97;
 }
 
-/* Text area with adjusted horizontal padding and gap */
 .cards.cards1 > ul > li > .cards-card-body:last-child {
   display: flex;
   flex-direction: column;
@@ -100,7 +93,6 @@
   background: none;
 }
 
-/* Main title styling */
 .cards.cards1 > ul > li > .cards-card-body:last-child p strong {
   color: #fff;
   font-size: 16px;
@@ -111,7 +103,6 @@
   position: relative;
 }
 
-/* Blue dot indicator for cards 2+; improved vertical alignment */
 .cards.cards1 > ul > li:not(:first-child) > .cards-card-body:last-child p strong {
   padding-left: 16px;
 }
@@ -128,7 +119,6 @@
   background: #1a81ff;
 }
 
-/* Date styling */
 .cards.cards1 > ul > li > .cards-card-body:last-child p:not(:first-child) {
   color: #8b8fa6;
   font-size: 12px;
@@ -136,7 +126,6 @@
   margin: 0;
 }
 
-/* Responsive adjustments */
 @media (width <= 900px) {
   .cards.cards1 {
     padding: 28px 0;
@@ -165,5 +154,105 @@
 
   .cards.cards1 > ul > li > .cards-card-body:last-child p strong {
     font-size: 13px;
+  }
+}
+
+
+.cards.cards60 {
+  background: #fff;
+  padding-top: 64px;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+/* Side-by-side card layout using flex row */
+.cards.cards60 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Card styling for consistent size, spacing, and elevation */
+.cards.cards60 > ul > li {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgb(44 62 80 / 10%);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 304px;
+  overflow: hidden;
+  transition: box-shadow 0.18s;
+}
+
+/* Simulated image area at card top */
+.cards.cards60 > ul > li > .cards-card-body:first-child {
+  background: #e6eaf0;
+  height: 128px;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* Main card content area */
+.cards.cards60 > ul > li > .cards-card-body:not(:first-child) {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+}
+
+/* Remove extra margin from <p> tags inside cards */
+.cards.cards60 > ul > li > .cards-card-body:not(:first-child) p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Card title styling: larger, bold, darker */
+.cards.cards60 > ul > li > .cards-card-body:not(:first-child) p strong {
+  display: block;
+  font-size: 1.14rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+/* Card subtitle/date styling: smaller, lighter */
+.cards.cards60 > ul > li > .cards-card-body:not(:first-child) p:not(:first-child) {
+  font-size: 1rem;
+  color: #6c7280;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+/* Responsive: cards stack vertically on narrow screens */
+@media (width <= 900px) {
+  .cards.cards60 {
+    padding-left: 0;
+    padding-top: 24px;
+  }
+
+  .cards.cards60 > ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards.cards60 > ul > li {
+    width: 100%;
+    max-width: 360px;
   }
 }
