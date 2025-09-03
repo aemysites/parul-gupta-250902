@@ -204,7 +204,6 @@
   display: contents;
 }
 
-/* --- LEFT COLUMN --- */
 .columns.columns81 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -215,7 +214,6 @@
   max-width: 540px;
 }
 
-/* Simulated image area */
 .columns.columns81 > div > div:first-child::before {
   display: block;
   width: 100%;
@@ -226,7 +224,6 @@
   content: "";
 }
 
-/* Unified card for heading, text, and button */
 .columns.columns81 > div > div:first-child > * {
   box-sizing: border-box;
   width: 100%;
@@ -238,21 +235,17 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
-
-  /* Visually group all children as a single card, covering h2, p, .button */
   position: relative;
-  top: -6px; /* allow card to visually touch the image area */
+  top: -6px;
   left: 0;
   right: 0;
   box-shadow: 0 4px 16px 0 rgb(40 56 86 / 8%);
 }
 
-/* Remove extra gap between the simulated image and the card */
 .columns.columns81 > div > div:first-child > *:first-child {
   margin-top: 0;
 }
 
-/* Remove default margins for heading, text, and button inside the card */
 .columns.columns81 > div > div:first-child > * > * {
   margin-top: 0;
   margin-bottom: 0;
@@ -275,12 +268,10 @@
   margin-top: 0;
 }
 
-/* Only last p should have its bottom margin reduced for the button */
 .columns.columns81 > div > div:first-child p:last-of-type {
   margin-bottom: 24px;
 }
 
-/* Button placement & style inside card */
 .columns.columns81 .button-container .button,
 .columns.columns81 a.button {
   margin: 0;
@@ -299,7 +290,6 @@
   align-self: flex-start;
 }
 
-/* Remove extra spacing below card */
 .columns.columns81 > div > div:first-child > *:not(:first-child) {
   margin-top: 0;
 }
@@ -321,7 +311,6 @@
   }
 }
 
-/* --- RIGHT COLUMN --- */
 .columns.columns81 > div > div:last-child {
   display: flex;
   flex-direction: column;
@@ -356,7 +345,6 @@
   text-align: left;
 }
 
-/* Form field simulation */
 .columns.columns81 > div > div:last-child p:not(:has(strong), :last-child, :first-child) {
   background: #f7f9fc;
   border: 1px solid #e5e5e5;
@@ -370,7 +358,6 @@
   align-items: center;
 }
 
-/* Labels styling */
 .columns.columns81 > div > div:last-child strong {
   color: #0a1931;
   font-weight: 600;
@@ -379,7 +366,6 @@
   margin-bottom: 4px;
 }
 
-/* "Submit" button: left-aligned, not full width */
 .columns.columns81 > div > div:last-child p:last-child {
   background: #0a1931;
   color: #fff;
@@ -396,14 +382,12 @@
   display: inline-block;
 }
 
-/* Keep right column width tight on large screens */
 @media (width >= 1200px) {
   .columns.columns81 > div > div:last-child {
     max-width: 430px;
   }
 }
 
-/* Responsive tweaks for right column */
 @media (width <= 900px) {
   .columns.columns81 > div > div:last-child {
     max-width: 100%;
@@ -419,5 +403,95 @@
     max-width: 100%;
     padding-left: 0;
     padding-top: 0;
+  }
+}
+
+
+.columns.columns82 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 482px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.columns.columns82 > div > div:first-child {
+  flex: 3.15 1 0;
+  background: #000;
+  min-height: 482px;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.columns.columns82 > div > div:last-child {
+  flex: 2 1 0;
+  background: #0C1244;
+  color: #B3B8D8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 482px;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 3.5rem 2.8rem 3.5rem 2.9rem;
+  margin: 0;
+}
+
+.columns.columns82 > div > div:last-child h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1.4rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.columns.columns82 > div > div:last-child p {
+  color: #B3B8D8;
+  font-size: 1.2rem;
+  margin: 0 0 1.3rem;
+  line-height: 1.68;
+  letter-spacing: 0;
+}
+
+.columns.columns82 > div > div:last-child p:last-child {
+  font-size: 1.07rem;
+  color: #B3B8D8;
+  opacity: 0.75;
+  margin-bottom: 0;
+}
+
+.columns.columns82 > div > div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (width <= 900px) {
+  .columns.columns82 > div {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .columns.columns82 > div > div {
+    min-height: 200px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .columns.columns82 > div > div:last-child {
+    padding: 2.2rem 1.2rem;
+  }
+
+  .columns.columns82 > div > div:last-child h2 {
+    font-size: 1.5rem;
   }
 }
