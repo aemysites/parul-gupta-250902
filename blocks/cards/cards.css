@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -24,4 +25,145 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+
+.cards.cards1 {
+  background: #12073c;
+  padding: 60px 0;
+}
+
+/* Side-by-side row, slightly increased gap, horizontal scroll */
+.cards.cards1 > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 36px;
+  margin: 0;
+  padding: 0 32px;
+  list-style: none;
+  overflow: auto visible;
+  justify-content: flex-start;
+  align-items: flex-start;
+  scrollbar-width: thin;
+}
+
+/* Slightly wider cards for less aggressive text wrapping */
+.cards.cards1 > ul > li {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 235px;
+  max-width: 245px;
+  width: 245px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* Remove default margin/padding on card sections */
+.cards.cards1 .cards-card-body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Top visual block - slightly taller */
+.cards.cards1 > ul > li > .cards-card-body:first-child {
+  height: 70px;
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 12px;
+}
+
+/* First card: purple gradient overlay */
+.cards.cards1 > ul > li:first-child > .cards-card-body:first-child {
+  background: linear-gradient(90deg, #6d4aff 75%, #8467ff 100%);
+  opacity: 0.93;
+}
+
+/* Other cards: neutral image placeholder */
+.cards.cards1 > ul > li:not(:first-child) > .cards-card-body:first-child {
+  background: #23263a;
+  opacity: 0.97;
+}
+
+/* Text area with adjusted horizontal padding and gap */
+.cards.cards1 > ul > li > .cards-card-body:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 14px 16px;
+  gap: 5px;
+  background: none;
+}
+
+/* Main title styling */
+.cards.cards1 > ul > li > .cards-card-body:last-child p strong {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+}
+
+/* Blue dot indicator for cards 2+; improved vertical alignment */
+.cards.cards1 > ul > li:not(:first-child) > .cards-card-body:last-child p strong {
+  padding-left: 16px;
+}
+
+.cards.cards1 > ul > li:not(:first-child) > .cards-card-body:last-child p strong::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1a81ff;
+}
+
+/* Date styling */
+.cards.cards1 > ul > li > .cards-card-body:last-child p:not(:first-child) {
+  color: #8b8fa6;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (width <= 900px) {
+  .cards.cards1 {
+    padding: 28px 0;
+  }
+
+  .cards.cards1 > ul {
+    gap: 14px;
+    padding: 0 8px;
+  }
+
+  .cards.cards1 > ul > li {
+    min-width: 150px;
+    width: 180px;
+    max-width: 75vw;
+  }
+
+  .cards.cards1 > ul > li > .cards-card-body:first-child {
+    height: 40px;
+    margin-bottom: 7px;
+  }
+
+  .cards.cards1 > ul > li > .cards-card-body:last-child {
+    padding: 0 5px 9px;
+    gap: 2px;
+  }
+
+  .cards.cards1 > ul > li > .cards-card-body:last-child p strong {
+    font-size: 13px;
+  }
 }
